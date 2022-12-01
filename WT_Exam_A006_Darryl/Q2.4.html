@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2.4</title>
+</head>
+<body>
+     <script>
+      function salCalc(age,exp)
+      {
+      let salary=0;
+        if(age>=35 && exp=="yes")
+        {
+             salary=6000;
+        }
+
+        else if(age>=28 && age<35 && exp=="yes")
+        {
+             salary=4800;
+        }
+        
+        else if(age<28 && exp=="yes")
+        {
+             salary=3000;
+        }
+
+        else if(age<28 && exp=="no")
+        {
+             salary=2000;
+        }
+
+        return salary;
+      }
+
+      var Sal = salCalc(32,"yes");
+      console.log(Sal);
+
+
+
+     </script>
+</body>
+</html>

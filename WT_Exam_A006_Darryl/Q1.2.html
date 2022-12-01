@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  padding: 25px;
+  background-color:aquamarine;
+  color:brown;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color:blueviolet;
+  color:bisque;
+
+}
+</style>
+</head>
+<body>
+
+<h2>Toggle Dark/Light Mode</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed erat tristique, euismod enim eget, congue quam. Vestibulum mollis hendrerit vehicula. Suspendisse magna purus, lacinia a laoreet sed, placerat at purus. Aenean at ipsum sit amet mi faucibus aliquam. Ut nunc arcu, sagittis non sodales ut, tristique in mauris. Suspendisse potenti. Nullam quis erat turpis. Donec finibus nibh vel vulputate lacinia. Quisque convallis elit sed urna vestibulum, sed tristique elit convallis. Vestibulum enim lacus, volutpat id nunc nec, posuere pulvinar arcu. Maecenas feugiat urna eget molestie faucibus. Nam hendrerit nibh tempus sollicitudin lacinia. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut cursus velit libero, eget tincidunt quam blandit non. Curabitur accumsan finibus faucibus. Donec vitae erat vitae ligula placerat egestas.</p>
+
+<button onclick="myFunction()" ><p><h1>Dark Mode</h1></p></button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
+</body>
+</html>

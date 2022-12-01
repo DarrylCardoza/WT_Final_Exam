@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4.2</title>
+</head>
+<body>
+    <script>
+        function capitalizeLetters(str1) 
+{ var arr = str1.split(' '); 
+var newArray = []; 
+for(var x=0;x<arr.length;x++){
+ newArray.push(arr[x].charAt(0).toUpperCase()+arr[x].slice(1)); 
+} 
+return newArray.join(' '); 
+} 
+console.log(capitalizeLetters("i love javascript"));
+
+    </script>
+</body>
+</html>

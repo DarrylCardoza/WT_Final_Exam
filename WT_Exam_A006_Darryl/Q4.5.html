@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4.4</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+    let UserCart = [
+        {productId:1,productName:"Mobile", price:70000},
+        {productId:2,productName:"Laptop", price:100000},
+        {productId:3,productName:"Airpods", price:26900},
+        {productId:4,productName:"Watch", price:30000},
+        {productId:5,productName:"Shoes", price:35000},
+        {productId:6,productName:"Bag", price:10000}]
+
+        let val=[];
+
+        function inAscOrder(arr) {
+            arr.sort(function(a, b) {
+      return a - b;
+    });
+    return arr;
+}
+
+        function inDescOrder(arr) {
+            arr.reverse(function(a, b) {
+      return a - b;
+    });
+    return arr;
+  }
+           for(var i=0;i<UserCart.length;i++)
+            {     
+            val.push(UserCart[i].price);
+           }
+      var sortArray1=inAscOrder(val);
+      console.log(sortArray1); 
+      var sortArray2=inDescOrder(val);
+      console.log(sortArray2); 
+    </script>
+</body>
+</html>
